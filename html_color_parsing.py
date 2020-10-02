@@ -13,6 +13,9 @@ class Color:
         self.g = g
         self.b = b
 
+    def __str__(self):
+        return 'Color(#{:02X}{:02X}{:02X})'.format(self.r, self.g, self.b)
+
 
 COLOR_MAP: Dict[str, Color] = {}
 
