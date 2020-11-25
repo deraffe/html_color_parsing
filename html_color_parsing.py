@@ -23,7 +23,10 @@ COLOR_MAP: Dict[str, Color] = {}
 def is_hex(inputc: str):
     assert len(inputc) == 1
     inputc = inputc.lower()
-    return inputc in ('a', 'b', 'c', 'd', 'e', 'f')
+    return inputc in (
+        'a', 'b', 'c', 'd', 'e', 'f', '0', '1', '2', '3', '4', '5', '6', '7',
+        '8', '9'
+    )
 
 
 def allhex(inputstr: str):
